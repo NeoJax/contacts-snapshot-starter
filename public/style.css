@@ -1,4 +1,4 @@
-html, body{
+html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -47,36 +47,36 @@ nav .search-form input {
   min-height: 100vh;
 }
 
-.page-column-content{
+.page-column-content {
   padding: 1em;
 }
 
-.contact-list{
+.contact-list {
   display: flex;
   flex-direction: column;
 }
 
-.contact-list-member{
+.contact-list-member {
   display: flex;
   flex-direction: row;
   padding: 0.2em 0.3em;
 }
-.contact-list-member:hover{
+.contact-list-member:hover {
   background-color: lightgrey;
 }
 
-.contact-list-member a{
+.contact-list-member a {
   text-decoration: none;
 }
-.contact-list-member a:hover{
+.contact-list-member a:hover {
   text-decoration: underline;
 }
 
-.contact-list-member .contact-link{
+.contact-list-member .contact-link {
   flex: 1 1 auto;
 }
 
-.contact-show-page-controls{
+.contact-show-page-controls {
   text-align: right;
 }
 
