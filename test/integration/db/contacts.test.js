@@ -6,10 +6,16 @@ const {
   search,
 } = require('../../../src/models/contacts.js');
 
+/*  NOTE: Test for whether they are a function, whether they return an error
+    correctly, and maybe other stuff that I have not thought of yet */
+
+/* NOTE: contacts = {first_name, last_name} */
+
 describe ('database functions', function () {
   describe ('create', function () {
     it ('should make something', function () {
-
+      const contact = {first_name: 'Jack', last_name: 'Lubaway'};
+      expect(create(contact)).to.not.be.an('error');
     });
     it ('should be in the database', function () {
 

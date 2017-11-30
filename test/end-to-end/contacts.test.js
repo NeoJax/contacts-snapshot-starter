@@ -1,18 +1,24 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const app = require('../../src/server.js');
+const app = require('../../src/server');
+
+const expect = chai.expect();
 
 chai.use(chaiHttp);
 
-describe('Client to Server', function() {
-  describe('GET /', function () {
+describe('Client to Server', () => {
+  describe('GET /', () => {
     it ('should grab the homepage', function (done) {
-      chai.request(app).get('/').end(function (err, res) {
-        done();
-      });
+      chai.request(app)
+        .get('/')
+        .end(function (err, res) {
+          expect(err).to.be.null;
+          expect(res).to.have.status(200);
+          done();
+        });
     });
   });
-  describe('GET /contacts/new', function () {
+  describe('GET /contacts/new', () => {
     it ('should grab the new contact page', function () {
 
     });
