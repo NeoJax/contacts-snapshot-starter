@@ -1,4 +1,3 @@
-console.log('Red Leader(contacts.js) Standing By');
 const contacts = require('../../models/contacts')
 
 const router = require('express').Router()

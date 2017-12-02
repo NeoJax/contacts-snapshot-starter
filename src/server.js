@@ -24,11 +24,8 @@ app.use((request, response) => {
 
 const port = process.env.PORT || 3000;
 console.log('SCV Good to Go Sir');
-if (process.env.NODE_ENV === 'test') {
-  app.EXPRESS_APP = true;
-  module.exports = app;
-} else {
-  app.listen(port, () => {
-    console.log(`http://localhost:${port}`);
-  });
-}
+app.listen(port, () => {
+  console.log(`http://localhost:${port}`);
+});
+
+module.exports = app;
